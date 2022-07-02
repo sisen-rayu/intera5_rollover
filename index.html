@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intera5</title>
+    <link rel="stylesheet" href="/resources/src/scss/style.css">
+</head>
+<body>
+    <h1 class="piano_ttl">piano</h1>
+    <ul class="set">
+        <a class="key white e js-hover">C<span class="inner"></span></a>
+        <li class="key black ds js-hover">C#<span class="inner"></span></li>
+        <li class="key white d js-hover">D<span class="inner"></span></li>
+        <li class="key black cs js-hover">D#<span class="inner"></span></li>
+        <li class="key white c js-hover">E<span class="inner"></span></li>
+        <li class="key white b js-hover">F<span class="inner"></span></li>
+        <li class="key black as js-hover">F#<span class="inner"></span></li>
+        <li class="key white a js-hover">G<span class="inner"></span></li>
+        <li class="key black gs js-hover">G#<span class="inner"></span></li>
+        <li class="key white g js-hover">A<span class="inner"></span></li>
+        <li class="key black fs js-hover">B♭<span class="inner"></span></li>
+        <li class="key white f js-hover">H<span class="inner"></span></li>
+      </ul>
+      <div x-data="{ open: false }">
+        <button @click="open = true">Expand</button>
+     
+        <span x-show="open">
+          Content...
+        </span>
+    </div>
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+      <script src="resources/src/js/test.js"></script>
+</body>
+</html>
