@@ -8,11 +8,14 @@ console.log($key);
 for(let i = 0; i < $key.length; i++) {
     // $key[i].addEventListener('click', );
     $key[i].addEventListener('mouseover', () => {
-        // $key.style.background = '#000';
+        $key[i].style.background = '#000';
         console.log('aaaa');
       }, false);
-}
-isHover = () => {
+
+      $key[i].addEventListener('mouseleave', () => {
+        $key[i].style.background = 'none';
+        console.log('aaaa');
+      }, false);
 
 }
 // $key.addEventListener('mouseover', () => {
