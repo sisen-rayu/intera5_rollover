@@ -1,28 +1,41 @@
 
 //target要素を指定
 const $key = Array.from(document.querySelectorAll(".key"));
+const $whiteKey = Array.from(document.querySelectorAll(".white_inner"));
 
-console.log($key);
+
+console.log($whiteKey);
 //特定のkeyがホバーされたら作動させる
 //マウスが要素上に入った時
-for(let i = 0; i < $key.length; i++) {
-    // $key[i].addEventListener('click', );
-    $key[i].addEventListener('mouseover', () => {
-        $key[i].style.background = '#000';
+for(let i = 0; i < $whiteKey.length; i++) {
+    // $whiteKey[i].addEventListener('click', );
+    $whiteKey[i].addEventListener('mouseover', () => {
+        // $whiteKey[i].style.background = '#000';
         console.log('aaaa');
+        anime({
+            targets: $whiteKey[i],
+            height: '255px',
+            easing: 'easeOutQuint',
+            direction: 'alternate',
+            background: '#417dde',
+            duration: 2000,
+          })
       }, false);
 
-      $key[i].addEventListener('mouseleave', () => {
-        $key[i].style.background = 'none';
-        console.log('aaaa');
+      $whiteKey[i].addEventListener('mouseleave', () => {
+        // $whiteKey[i].style.background = 'none';
+        console.log('bbbb');
+        anime({
+            targets: $whiteKey[i],
+            height: '0px',
+            easing: 'easeOutQuint',
+            duration: 2000,
+            // direction: 'nomal',
+            background: 'none'
+          })
       }, false);
-
 }
-// $key.addEventListener('mouseover', () => {
-//   $key.style.background = '#000';
-// }, false);
 
-//マウスが要素上から離れた時
-// $key.addEventListener('mouseleave', () => {
-//   $key.style.background = '#0091EA';
-// }, false);
+//色を工夫する
+//アニメーションを工夫する
+//音をつける

@@ -40,11 +40,13 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #417dde;
-  -webkit-transform-origin: 0% 50%;
-          transform-origin: 0% 50%;
   opacity: 0.4;
   z-index: 3;
+}
+
+.white_inner {
+  background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+  background: linear-gradient(to bottom, #eee 0%, #fff 100%);
 }
 
 ul .white {
