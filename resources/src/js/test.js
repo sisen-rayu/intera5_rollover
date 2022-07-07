@@ -1,10 +1,9 @@
 
-//target要素を指定
-const $key = Array.from(document.querySelectorAll(".key"));
+// const $key = Array.from(document.querySelectorAll(".key"));
 const $whiteKey = Array.from(document.querySelectorAll(".white_inner"));
 
 
-console.log($whiteKey);
+// console.log($whiteKey);
 //特定のkeyがホバーされたら作動させる
 //マウスが要素上に入った時
 for(let i = 0; i < $whiteKey.length; i++) {
