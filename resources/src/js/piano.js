@@ -2,7 +2,7 @@
 const Key = document.querySelectorAll('.key');
 
 //シンセ生成
-const synth = new Tone.MonoSynth().toMaster();
+const synth = new Tone.MonoSynth().toDestination();
 
 //鍵盤数分ループ
 for (let i = 0; i < Key.length; i++) {
