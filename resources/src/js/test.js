@@ -8,10 +8,8 @@ console.log($whiteKey);
 //特定のkeyがホバーされたら作動させる
 //マウスが要素上に入った時
 for(let i = 0; i < $whiteKey.length; i++) {
-    // $whiteKey[i].addEventListener('click', );
     $whiteKey[i].addEventListener('mouseover', () => {
-        // $whiteKey[i].style.background = '#000';
-        console.log('aaaa');
+        // console.log('aaaa');
         anime({
             targets: $whiteKey[i],
             height: '255px',
@@ -23,8 +21,7 @@ for(let i = 0; i < $whiteKey.length; i++) {
       }, false);
 
       $whiteKey[i].addEventListener('mouseleave', () => {
-        // $whiteKey[i].style.background = 'none';
-        console.log('bbbb');
+        // console.log('bbbb');
         anime({
             targets: $whiteKey[i],
             height: '0px',
